@@ -1,0 +1,16 @@
+
+  <div *ngIf="productsInCart.length > 0; else elseBlock">
+    <ul>
+      <li *ngFor="let product of productsInCart">
+        {{product.name}}
+      </li>
+    </ul>
+    <div>
+        <button (click)="clearCart()">Remove all products</button>
+      </div>
+  </div>
+  <ng-template #elseBlock>
+    <div>
+      The cart is empty!
+    </div>
+  </ng-template>

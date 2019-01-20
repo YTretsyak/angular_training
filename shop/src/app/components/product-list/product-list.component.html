@@ -1,0 +1,10 @@
+<div>
+    product-list:
+    <ul>
+      <li *ngFor = "let product of products;">
+        {{product.description}}
+        <button (click)="onProductClick(product)">Product name: {{product.name}} Price: {{product.price}}</button>
+      </li>
+    </ul>
+</div>
+
