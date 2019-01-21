@@ -11,7 +11,7 @@ import {Observable} from 'rxjs';
 })
 
 export class ProductListComponent implements OnInit {
-  public products:Array<Product>;
+  products:Array<Product>;
   constructor(private productsService:ProductsService,
     private cartComponent:CartComponent) { }
 

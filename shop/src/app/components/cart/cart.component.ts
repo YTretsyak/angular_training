@@ -15,11 +15,11 @@ export class CartComponent implements OnInit {
     this.cartService.getProducts().subscribe(products=>this.productsInCart = products);
   }
 
-  addProductToCart(product:Product){
+  addProductToCart (product:Product) {
     this.cartService.addToCart(product);
   }
 
-  clearCart(){
+  clearCart () {
     this.cartService.removeAll();
   }
 }
