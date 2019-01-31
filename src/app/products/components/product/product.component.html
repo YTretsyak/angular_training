@@ -1,2 +1,7 @@
-<p>Product name: {{product.name}}</p>
-<p>Product Price: {{product.price}}</p>
+
+<div>
+    Name: {{product.name}}
+    <input [disabled] ="!editable" [(ngModel)]="product.price" name="price"> {{product.price}}
+    <button (click)="buy(product)">Buy</button>
+    <button (click) ="enableEdit()">Edit</button>
+</div>

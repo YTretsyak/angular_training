@@ -1,0 +1,8 @@
+<div> Products in cart:
+  <ul>
+      <app-cart-item *ngFor="let product of productsInCart"
+        [product] = "product" (removed)="onRemoved($event)"></app-cart-item >
+  </ul>
+  Count:{{length.length}}
+  
+</div>
